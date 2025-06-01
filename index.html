@@ -1,0 +1,174 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ansar Khan Driver Services</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #fff;
+      color: #000;
+    }
+    header {
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #eee;
+    }
+    .logo {
+      font-weight: 700;
+      font-size: 1.5rem;
+      color: #000;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #fff;
+      text-decoration: underline;
+    }
+    .hero {
+      padding: 3rem 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      background: #f7f9fc;
+    }
+    .hero-content {
+      max-width: 500px;
+    }
+    .hero-content h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+    .hero-content p {
+      font-size: 1.1rem;
+      margin-bottom: 2rem;
+    }
+    .hero-content button {
+      background: #000;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      font-size: 1rem;
+      cursor: pointer;
+      border-radius: 6px;
+      transition: background 0.3s ease, transform 0.2s ease;
+    }
+    .hero-content button:hover {
+      background: #222;
+      transform: scale(1.03);
+    }
+    .hero-image {
+      max-width: 500px;
+    }
+    .hero-image img {
+      width: 100%;
+    }
+    .section {
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+    .section h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    .card {
+      padding: 1.5rem;
+      border: 1px solid #eee;
+      border-radius: 8px;
+      text-align: left;
+      background-color: #fff;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    }
+    footer {
+      background: #111;
+      color: #ccc;
+      padding: 2rem;
+      font-size: 0.9rem;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">Ansar Khan</div>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="book.html">Book</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<section class="hero" data-aos="fade-up">
+  <div class="hero-content">
+    <h1>Go anywhere with Ansar Khan</h1>
+    <p>Hire professional car drivers for city rides, long trips, or business travel – quick, safe, and reliable.</p>
+    <button onclick="window.location.href='book.html'">Book a Driver</button>
+  </div>
+  <div class="hero-image" data-aos="fade-left" data-aos-delay="200">
+    <img src="car%20.png" alt="Car driver service" />
+  </div>
+</section>
+
+<section class="section" data-aos="fade-up">
+  <h2>Our Car Services</h2>
+  <div class="card-grid">
+    <div class="card" data-aos="zoom-in" data-aos-delay="100">
+      <h3>Personal Driver</h3>
+      <p>Need a full-time or part-time car driver for your daily routine? We’ve got you covered.</p>
+    </div>
+    <div class="card" data-aos="zoom-in" data-aos-delay="200">
+      <h3>Outstation Rides</h3>
+      <p>Heading out of town? Hire a trusted driver for intercity travel and family trips.</p>
+    </div>
+    <div class="card" data-aos="zoom-in" data-aos-delay="300">
+      <h3>On-Demand Car Driver</h3>
+      <p>Book a driver at your location instantly. Fast response, anytime service.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  &copy; 2025 Ansar Khan Driver Services | Powered by professional drivers. Designed with care.
+</footer>
+
+<!-- AOS JS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 800,
+    once: true
+  });
+</script>
+
+</body>
+</html>
